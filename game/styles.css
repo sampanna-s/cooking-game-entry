@@ -1,0 +1,40 @@
+/* Sizzle Rush — page chrome around the canvas. The game itself is
+   drawn on the canvas; this only centres it and styles the help line. */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2e2118;
+  color: #fff8e7;
+  font-family: system-ui, "Segoe UI", sans-serif;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  image-rendering: auto;
+}
+
+.help {
+  margin: 0;
+  font-size: 14px;
+  color: #d8cbb8;
+  text-align: center;
+}
+
+.help b { color: #ffdf6b; }
